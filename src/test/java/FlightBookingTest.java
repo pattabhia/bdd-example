@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"pretty"},
         snippets = SnippetType.CAMELCASE,
-        features = "classpath:features"
+        features = "classpath:features/booking-period.feature"
 )
-public class CucumberRunner {
+public class FlightBookingTest {
 }
