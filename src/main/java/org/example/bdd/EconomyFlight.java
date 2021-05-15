@@ -1,14 +1,21 @@
 package org.example.bdd;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import java.util.ArrayList;
+import java.util.List;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-public class EconomyFlight extends Flight{
+public class EconomyFlight extends Flight {
 
-    private String type;
+    @Override
+    public void addPassenger(Passenger passenger) {
+        passengerList.add(passenger);
+    }
 
+    /**
+     * @param passenger - Passenger
+     * @return boolean - status
+     */
+    @Override
+    public boolean removePassenger(Passenger passenger) {
+        return passengerList.remove(passenger);
+    }
 }

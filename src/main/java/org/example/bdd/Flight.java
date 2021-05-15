@@ -10,6 +10,18 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Flight {
+public abstract class Flight  {
+
     private int id;
+
+    protected List<Passenger> passengerList = new ArrayList<>();
+
+    public abstract void addPassenger(Passenger passenger);
+
+    public abstract boolean removePassenger(Passenger passenger);
+
+    public int getPassengerCount() {
+        return passengerList.size();
+    }
+
 }
