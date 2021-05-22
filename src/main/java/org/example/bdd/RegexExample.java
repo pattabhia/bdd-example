@@ -1,6 +1,6 @@
 package org.example.bdd;
 
-public class DateTest {
+public class RegexExample {
 
     public static void main(String[] args) {
         String names = "a, 98,c, D, e, f";
